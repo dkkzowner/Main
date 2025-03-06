@@ -327,8 +327,8 @@ local Slider = PlayerTab:CreateSlider({
 
 local MainSection = MainTab:CreateSection("Inf Yield")
 
-local Button = Tab:CreateButton({
-   Name = "Button Example",
+local Button = NainTab:CreateButton({
+   Name = "Inf yield",
    Callback = function()
      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
