@@ -29,9 +29,9 @@ end
 local Window = Rayfield:CreateWindow({
    Name = "KaisPayout | Sw2",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Loading...",
+   LoadingTitle = "loading...",
    LoadingSubtitle = "by kais",
-   Theme = "", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Light", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -327,7 +327,7 @@ local Slider = PlayerTab:CreateSlider({
 
 local MainSection = MainTab:CreateSection("Inf Yield")
 
-local Button = NainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Inf yield",
    Callback = function()
      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
