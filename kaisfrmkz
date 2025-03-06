@@ -325,5 +325,13 @@ local Slider = PlayerTab:CreateSlider({
   end,
 })
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+local MainSection = MainTab:CreateSection("Inf Yield")
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
 
