@@ -333,3 +333,13 @@ local Button = MainTab:CreateButton({
      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
+
+local TeleportsTab = Window:CreateTab("Teleports", 4483362458) -- Title, Image
+local TeleportsSection = PlayerTab:CreateSection("Teleport")
+
+local Button = TeleportTab:CreateButton({
+   Name = "New ap2",
+   Callback = function()
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(733, 5, 201)
+   end,
+})
