@@ -343,3 +343,10 @@ local Button = TeleportsTab:CreateButton({
  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(733, 5, 201)
    end,
 })
+
+local Button = TeleportsTab:CreateButton({
+   Name = "Gun shop",
+   Callback = function()
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240, 4, 55)
+   end,
+})
