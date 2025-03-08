@@ -182,7 +182,7 @@ end
 
 -- Button for Duplication
 MainTab:CreateButton({
-    Name = "Dupe Laptop % Card",
+    Name = "Dupe Laptop & Card",
     Callback = function()
         duplicateCardsAndLaptops()
     
