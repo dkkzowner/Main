@@ -43,6 +43,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local player = Players.LocalPlayer
 
+local dupeAmount = 10
+local StatusLabel = MainTab:CreateLabel("Status: Waiting for action...")
+
+
 local function notify(message, time, type)
     local success, err = pcall(function()
         game:GetService("StarterGui"):SetCore("SendNotification", {
