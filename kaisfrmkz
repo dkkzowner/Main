@@ -27,10 +27,10 @@ local function isWhitelisted(player)
 end
 
 local Window = Rayfield:CreateWindow({
-   Name = "KaisPayout | Sw2",
+   Name = "KAIS | Sw2",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "loading...",
-   LoadingSubtitle = "by kais",
+   LoadingSubtitle = "By kais",
    Theme = "Light", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
@@ -337,16 +337,16 @@ local Button = MainTab:CreateButton({
 local TeleportsTab = Window:CreateTab("Teleports", 4483362458) -- Title, Image
 local TeleportsSection = TeleportsTab:CreateSection("Teleport")
 
-local Button = TeleportsTab:CreateButton({
-   Name = "New ap2",
+local Button TeleportsTab:CreateButton({
+   Name = "Apartment 1",
    Callback = function()
- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(733, 5, 201)
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3, 4, 53)
    end,
 })
 
 local Button = TeleportsTab:CreateButton({
-   Name = "Gun shop",
+   Name = "Apartment 2",
    Callback = function()
- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240, 4, 55)
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(733, 5, 201)
    end,
 })
